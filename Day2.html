@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <article>
+         <header>
+            <h1>WELCOME</h1>
+        </header>
+    </article>
+    <head>
+        <title>Registration form</title>
+        <style>
+            body { 
+            margin: 0;
+            padding: 0;
+            display: flex
+            justify-content: centre;
+            align-items: centre;
+            height: 100vh;}
+
+        </style>
+    </head>
+<body>
+    <div>
+    
+        <form action="/action_page.php">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br><br>
+
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br><br>
+
+        
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" name="email">
+          </form><br>
+   
+
+    <label for="pwd">Password:</label>
+    <input type="Password" name="pwd" id="pwd"minlength="6"required><br><br>
+    <form>
+
+        <label for="phone">Enter phone number:</label>
+
+        <input type="number" name="phone" id="tel"placeholder="[0-9]{5} [0-9]{5}"required><br>
+        <br>
+
+   
+
+    <select class="form-select"autocomplete="country" id="country">
+        <option value=" ">Country</option>
+        <option value="IN">India</option>
+    </select>
+
+    <select class="form-select"autocomplete="state" id="state">
+        <option value="AP">Andhra Pradesh</option>
+        <option value="TS">Telangana</option>
+        <option value="MH">Maharastra</option>
+        <option value="TN">Tamil Nadu</option>
+        <option value="MH">Maharastra</option>
+        <option value="KL">Kerala</option>
+        <option value="DL">Delhi</option>
+    </select> <br>
+    <br>
+
+
+    <form action="/action_page.php">
+        <input type="submit" value="submit">
+    </form>
+
+    <footer>
+        <p>THANK YOU</p>
+    </footer>
+</div>
+</body>
+</html>
