@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <style>
+       
+        *{
+        box-sizing: border-box;
+        }
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+
+header
+{
+background-color:rgb(14, 230, 230);
+padding: 10px;
+text-align: center;
+font-size: 20px;
+color: brown;
+}
+
+ footer{
+    background-color: aqua;
+    position: fixed;
+    padding: 10px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: black;
+ }
+      </style>
+    </head>
+    
+<body>
+    <header>
+        <h1>Music and Movie</h1>
+    </header>
+    <img height="200px" width="400px" src="https://havokjournal.com/wp-content/uploads/2021/05/Movie-Hollywood-Theatre-Cultural-Icon-Symbolism-scaled.jpeg" alt="Hi Viewers">
+   <video height="200px" width="200px"  controls>
+    <source  src="html.mp4" type="video/mp4">
+   </video>
+  
+    <audio id="audio" controls>
+    <source src="audio.mp3" type="audio/mp3">
+  </audio>
+    
+        <div class="control">
+            <button onclick="document.getElementById('audio').play()">Play</button>
+            <button onclick="document.getElementById('audio').pause()">pause</button>
+            <button onclick="document.getElementById('audio').currentTime=0">Restart</button>
+        
+        </div>
+        <footer>
+            <h5>Conditions applied</h5>
+        </footer>
+</body>
+
+</html>
