@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+ header
+ {
+   background-color:rgb(237, 68, 130);
+   position: auto;
+   padding: 20px;
+   margin-bottom: 20px;
+   text-align: center;
+   font-size: 20px;
+   color: rgb(0, 0, 0);
+   }
+   footer
+   {
+    background-color:rgb(237, 68, 130);
+    position: fixed;
+    padding: 6px;
+    margin-top: 200px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: black;
+  }
+div {
+  width: 200px;
+  height: 200px;
+  background: rgb(0, 255, 234);
+  transition: width 2s;
+}
+
+div:hover {
+  width: 500px;
+  align-items: center;
+}
+div {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(0, 229, 255);
+  position: relative;
+  animation-name: example;
+  animation-duration: 10s;
+  
+}
+
+@keyframes example {
+  0%   {background-color:rgb(255, 0, 128); left:0px; top:0px;}
+  10%  {background-color:yellow; left:200px; top:0px;}
+  20%  {background-color:blue; left:200px; top:200px;}
+  30%  {background-color:green; left:0px; top:200px;}
+  40% {background-color:rgb(0, 255, 221); left:0px; top:0px;}
+  50%   {background-color:rgba(60, 255, 0, 0.81); left:0px; top:0px;}
+  60%  {background-color:rgb(208, 0, 255); left:200px; top:0px;}
+  70%  {background-color:rgb(255, 145, 0); left:200px; top:200px;}
+  80%  {background-color:rgb(152, 255, 9); left:0px; top:200px;}
+  90% {background-color:rgb(255, 0, 111); left:0px; top:0px;}
+  100%   {background-color:rgb(229, 210, 0); left:0px; top:0px;}
+  
+}
+body {
+  padding: 25px;
+  background-color: rgb(252, 229, 102);
+  color: black;
+  font-size: 20px;
+}
+
+.dark-mode {
+  background-color: rgb(84, 82, 82);
+  color: rgb(252, 229, 102);
+}
+
+
+</style>
+</head>
+<body>
+<header>
+<h1>ANIMATION</h1>
+</header>
+
+<button onclick="myFunction()">Toggle dark mode</button>
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+<div></div>
+<br>
+
+<footer>
+  <h5>Rock the world</h5>
+</footer>
+</body>
+</html>
