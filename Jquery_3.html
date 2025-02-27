@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery Day-3 Task</title>
+        <script src="jquery-3.7.1.js"></script>
+        <script src="Jquery_3.js"></script>
+        <style>
+            *{
+                margin: 0;
+            }
+            body{
+                background-color: rgb(238, 193, 139);
+            }
+            header{
+                background-color: rgb(115, 97, 97);
+                color: rgb(224, 200, 200);
+                text-align: center;
+                padding: 20px;
+                position: sticky;
+                top: 0;
+                width: 100%;
+            }
+            #firstdiv{
+                margin: 20px;
+                padding: 30px;
+            }
+            #modify{
+                margin: 20px;
+            }
+            #seconddiv{
+                margin: 20px;
+                padding: 30px;
+            }
+            #clone{
+                margin: 20px;
+            }
+            #thirddiv{
+                margin: 20px;
+                padding: 30px;
+            }
+            #findParent{
+                margin: 20px;
+            }
+            #findhildren{
+                margin: 20px;
+            }
+            #fourthdiv{
+                margin: 20px;
+                padding: 30px;
+            }
+            #addItem{
+                margin: 20px;
+            }
+            #removeItem{
+                margin: 20px;
+            }
+            #fifthdiv{
+                margin: 20px;
+                padding: 30px;
+            }
+            #highligth{
+                margin: 20px;
+            }
+            #original{
+                margin: 20px;
+            }
+            table, th, td {
+                border: 3px solid;
+            }
+            table{
+                
+                width: 25%;
+            }
+            th{
+                height: 30px;
+            }
+            td{
+                height: 20px;
+                text-align: center;
+            }
+            #highlight{
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>JQuery </header>
+ 
+        <div id="firstdiv">
+        <ul id="myList">
+            <li>Pallavi</li>
+            <li>Mahija</li>
+            <li>Priya</li>
+        </ul>
+        <button id="modify">Modify Item</button>
+        </div>
+ 
+        <div id="seconddiv">
+        <div id="container">
+            <p id="original">Hello Everyone</p>
+        </div>
+        <button id="clone">Clone & Append</button>
+        </div>
+ 
+        <div id="thirddiv">
+        <div id="parentDiv">
+            <p id="child">Child Paragraph</p>
+        </div>
+        <button id="findParent">Find Parent</button>
+        <button id="findChildren">Find Children</button>
+        </div>
+ 
+        <div id="fourthdiv">
+        <ul id="dynamicList">
+            <li>Item</li>
+        </ul>
+        <button id="addItem">Add Item</button>
+        <button id="removeItem">Remove Item</button>
+        </div>
+ 
+        <div id="fifthdiv">
+        <table id="myTable">
+            <tr><th>Names</th></tr>
+            <tr><td>Pallavi</td></tr>
+            <tr><td>Pooji</td></tr>
+            <tr><td>Mahija</td></tr>
+        </table>       
+        <button id="highlight">Highlight Rows</button>
+        </div>
+    </body>
+</html>
