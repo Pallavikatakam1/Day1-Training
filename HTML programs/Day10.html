@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Java Script Task</title>
+        <style>
+            *{
+                margin: 0;
+            }
+            header{
+                margin-bottom: 10px;
+                padding: 20px; 
+                background-color:  black; 
+                text-align: center; 
+                color: whitesmoke;
+                position: sticky;
+                top: 0;
+            }
+            #result{
+                width: 100px;
+                height:30px;
+                background-color: bisque;
+                margin: 20px; 
+                text-align: center;
+            }
+            label{
+                margin: 10px;
+            }
+            h3{
+                margin: 10px;
+                font-family: cursive;
+            }
+            p{
+                margin: 10px;
+            }
+            #result1{
+                width: 350px;
+                height:200px;
+                background-color: bisque;
+                margin: 20px; 
+            }
+            #result2{
+                width: 350px;
+                height:200px;
+                background-color: bisque;
+                margin: 20px; 
+            }
+            #result3{
+                width: 350px;
+                height:200px;
+                background-color: bisque;
+                margin: 20px; 
+            }
+            #variables{
+                width: 350px;
+                height:200px;
+                background-color: aliceblue;
+                margin: 20px; 
+                
+            }
+            #variables:hover{
+                background-color: black;
+                transition-duration: 1s;
+                color: white;
+            }
+            #arithmetic{
+                width: 350px;
+                height:200px;
+                background-color: aliceblue;
+                margin: 20px; 
+            }
+            #arithmetic:hover{
+                background-color: black;
+                transition-duration: 1s;
+                color: white;
+            }
+            #rectangle{
+                margin: 20px;
+                width: 350px;
+                height: 50px;
+                background-color: bisque;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <button style="float: left;"><a href="./index.html" tabindex="1">Back to Home</a></button>
+                Java Script Task
+            </header>
+            <h3>Declare and Initialize variables :</h3>          
+            <div id="variables"></div>
+
+            <h3>Arithmetic Operations :</h3>          
+            <div id="arithmetic"></div>
+
+            <h3>Enter Your Name :</h3>
+            <label for="username">Your Name : </label>
+            <input type="text" id="username">
+            <button onclick="greeting()">Click</button>
+
+            <h3>Area of rectangle :</h3>
+            <label for="len">Enter the length : </label>
+            <input type="text" id="length"> 
+            <label for="brea">Enter the breadth : </label>
+            <input type="text" id="breadth"> 
+            <button type="submit" onclick="area()">Click</button>
+            <div id="rectangle"></div>
+
+            <h3>TypeOf input :</h3>
+            <label for="inputtype">Enter the input : </label>
+            <input type="text" id="data"> 
+            <button type="submit" onclick="typefunction()">Click</button>
+            <div id="result"></div>
+
+            <h3>String Operations :</h3>
+            <label for="inputstring">Enter String :</label>
+            <input type="text" id="stringinput">
+            <button type="submit" onclick="stringfunction()">Click</button>
+            <div id="result1"></div>
+
+            <h3>Array Operations :</h3>
+            <p>Give input as (a,b,c,d)</p>
+            <label for="inputarray">Enter Array :</label>
+            <input type="text" id="inarray">
+            <button type="submit" onclick="arrayfunction()">Click</button>
+            <div id="result2"></div>
+
+            <h3>Object Operations :</h3>
+            <p>Give input as ({"name":"xyz","age":"2","city":"abc"})</p>
+            <label for="inputobject">Enter Object :</label>
+            <input type="text" id="inobject">
+            <button type="submit" onclick="objectfunction()">Click</button>
+            <div id="result3"></div>
+            <script src="./js/main.js"></script>
+    </body>
+</html>
